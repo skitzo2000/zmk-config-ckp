@@ -63,18 +63,15 @@
         };
 		fn_layer_color: fn_layer_color {
 			label = "ZM_layer_color";
-			compatible = "zmk,behavior-macro";
 			wait-ms = <0>;
 			tap-ms = <0>;
-			#binding-cells = <0>;
 			bindings
 				= <&macro_press &mo 3>
 				, <&macro_tap &rgb_ug RGB_ON>
     			, <&macro_tap &rgb_ug RGB_COLOR_HSB(117,100,50)>
     			, <&macro_pause_for_release>
     			, <&macro_release &mo 3>
-    			, <&macro_tap &rgb_ug RGB_OFF>
-				;
+    			, <&macro_tap &rgb_ug RGB_OFF>;
 		};
     };
 };
@@ -97,7 +94,7 @@
 				&kp TAB  	&kp Q  		&kp W  	&kp E	&kp R  &kp T  &kp Y  &kp U  &kp  I    	&kp  O  	&kp  P  	&kp LBKT &kp RBKT 	 	&kp BSLH 	&kp DEL
 				&kp CLCK  	&kp A  		&kp S  	&kp D	&kp F  &kp G  &kp H  &kp J  &kp  K    	&kp  L	    &kp SEMI	&kp SQT       			&kp RET		&kp PG_DN
 				&kp LSHFT 	&kp Z  		&kp X  	&kp C	&kp V  &kp B  &kp N  &kp M  &kp COMMA	&kp DOT					&kp FSLH   	&kp RSHFT 	&kp UP 		&kp END
-				&kp LCTRL 	&kp LGUI 	&kp LALT            &kp SPACE                          	&kp RALT  	&mo raise 		&kp RCTRL 	&kp LEFT 	&kp DOWN 	&kp RIGHT
+				&kp LCTRL 	&kp LGUI 	&kp LALT            &kp SPACE                          	&kp RALT  	&mo 3 		&kp RCTRL 	&kp LEFT 	&kp DOWN 	&kp RIGHT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
@@ -115,7 +112,7 @@
 				&kp TAB  	&kp Q  		&kp W  	&kp E	&kp R  &kp T  &kp Y  &kp U  &kp  I    	&kp  O  	&kp  P  	&kp LBKT &kp RBKT 	 	&kp BSLH 	&kp DEL
 				&kp CLCK  	&kp A  		&kp S  	&kp D	&kp F  &kp G  &kp H  &kp J  &kp  K    	&kp  L	    &kp SEMI	&kp SQT       			&kp RET		&kp PG_DN
 				&kp LSHFT 	&kp Z  		&kp X  	&kp C	&kp V  &kp B  &kp N  &kp M  &kp COMMA	&kp DOT					&kp FSLH   	&kp RSHFT 	&kp UP 		&kp END
-				&kp LCTRL 	&kp LGUI 	&kp LALT            &kp SPACE                          	&kp RALT  	&trans 		&trans 	&kp LEFT 	&kp DOWN 	&kp RIGHT
+				&kp LCTRL 	&kp LGUI 	&kp LALT            &kp SPACE                          	&kp RALT  	&mo 3 		&trans 	&kp LEFT 	&kp DOWN 	&kp RIGHT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
@@ -133,19 +130,20 @@
 				&kp TAB  	&kp Q  		&kp W  	&kp E	&kp R  &kp T  &kp Y  &kp U  &kp  I    	&kp  O  	&kp  P  	&kp LBKT &kp RBKT 	 	&kp BSLH 	&kp DEL
 				&kp CLCK  	&kp A  		&kp S  	&kp D	&kp F  &kp G  &kp H  &kp J  &kp  K    	&kp  L	    &kp SEMI	&kp SQT       			&kp RET		&kp PG_DN
 				&kp LSHFT 	&kp Z  		&kp X  	&kp C	&kp V  &kp B  &kp N  &kp M  &kp COMMA	&kp DOT					&kp FSLH   	&kp RSHFT 	&kp UP 		&kp END
-				&kp LCTRL 	&kp LGUI 	&kp LALT            &kp SPACE                          	&kp RALT  	&trans		&trans 	&kp LEFT 	&kp DOWN 	&kp RIGHT
+				&kp LCTRL 	&kp LGUI 	&kp LALT            &kp SPACE                          	&kp RALT  	&mo 3 		&trans 	&kp LEFT 	&kp DOWN 	&kp RIGHT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		raise {
 			bindings = <
-				&kp ESC 	&kp F1 			&kp F2 			&kp F3 		&kp F4 &kp F5 &kp F6 &kp F7 &kp F8  &kp  F9   	&kp F10  	&kp F11 	&kp F12 		&trans 					&rgb_ug RGB_TOG
-				&trans 		&trans 			&trans 			&trans 		&trans &trans &trans &trans &trans  &trans 		&prntscreen 	&trans  	&kp PAUSE_BREAK &reset 				&kp INS
-				&trans    	&trans  		&trans 			&trans		&happy_friday &good_morning &happy_monday &trans &trans 	&trans 		&trans  	&trans   	&bootloader 	&kp PG_UP
-				&trans 	   &rgb_ug RGB_HUI	&rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_SPI &rgb_ug RGB_SPD 	&rgb_ug RGB_EFF	 	&trans &trans  	&bl BL_INC 	&kp HOME
-			    &bt BT_PRV 	&bt BT_NXT  	&bt BT_CLR      			 &trans                                			&bl BL_TOG   &trans &trans 			&kp C_PREV 							&bl BL_DEC  &kp C_NEXT
+				&kp ESC 	&kp F1 			&kp F2 			&kp F3 		&kp F4 &kp F5 &kp F6 &kp F7 &kp F8  &kp  F9   	&kp F10  	&kp F11 	&kp F12 		&trans 		&rgb_ug RGB_TOG
+				&trans 		&trans 			&trans 			&trans 		&trans &trans &trans &trans &trans  &trans 		&prntscreen 	&trans  	&kp PAUSE_BREAK &reset 		&kp INS
+				&trans    	&trans  		&trans 			&trans		&happy_friday &good_morning &happy_monday &trans &trans 	&trans 		&trans  	&trans   	&bootloader 				&kp PG_UP
+				&trans 	   &rgb_ug RGB_HUI	&rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_SPI &rgb_ug RGB_SPD 	&rgb_ug RGB_EFF	 	&trans  	&trans  	&kp C_VOL_UP 				&kp HOME
+			    &bt BT_PRV 	&bt BT_NXT  	&bl BL_INC      			 &trans                                			&bl BL_INC   &trans &trans 		&kp C_PREV 	&kp C_VOL_DN 				&kp C_NEXT
 			>;
 			sensor-bindings = <&inc_dec_kp UP DOWN>;
 		};
+		//&rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &bl BL_INC &bl BL_TOG &bt BT_CLR
 	};
 };
