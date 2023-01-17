@@ -31,7 +31,6 @@
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp P>
 				, <&macro_release &kp LSHFT>
-				, <&macro_tap &kp a &kp u &kp l>
                 ;
         };
 		good_morning: good_morning {
