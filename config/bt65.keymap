@@ -26,25 +26,31 @@
 		myname: myname {
             label = "ZM_myname";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+			wait-ms = <40>;
+			tap-ms = <40>;
+			#binding-cells = <0>;
             bindings
-                = <&macro_tap &kp P &kp a &kp u &kp l >
+                = <&kp P &kp a &kp u &kp l>
                 ;
         };
 		techops_key: techops_key {
             label = "ZM_techops_key";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+			wait-ms = <40>;
+			tap-ms = <40>;
             bindings
-                = <&macro_tap &kp ~ &kp / &kp . &kp s &kp s &kp h &kp / &kp t &kp e &kp c &kp h &kp o &kp p &kp s &kp _ &kp s &kp h &kp a &kp r &kp e &kp d &kp . &kp p &kp e &kp m >
+                = <&kp ~ &kp / &kp . &kp s &kp s &kp h &kp / &kp t &kp e &kp c &kp h &kp o &kp p &kp s &kp _ &kp s &kp h &kp a &kp r &kp e &kp d &kp . &kp p &kp e &kp m>
                 ;
         };
 		ed25519_key: ed25519_key {
             label = "ZM_ed25519_key";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+			wait-ms = <40>;
+			tap-ms = <40>;
             bindings
-                = <&macro_tap &kp ~ &kp / &kp . &kp s &kp s &kp h &kp / &kp i &kp d &kp _ &kp e &kp d &kp 2 &kp 5 &kp 5 &kp 1 &kp 9>
+                = <&kp ~ &kp / &kp . &kp s &kp s &kp h &kp / &kp i &kp d &kp _ &kp e &kp d &kp 2 &kp 5 &kp 5 &kp 1 &kp 9>
                 ;
         };
 		to_fn: to_fn {
