@@ -31,14 +31,14 @@
 			#binding-cells = <0>;
             bindings
                 = <&macro_press LSHIFT>
-				, <&kp P> 
+				, <$macro_tap &kp P> 
 				, <&macro_release LSHFT>
-				, <&kp A &kp U &kp L>
+				, <&macro_tap &kp A &kp U &kp L>
                 , <&kp SPACE>
 				, <&macro_press LSHIFT>
-				, <&kp N> 
+				, <&macro_tap &kp N> 
 				, <&macro_release LSHFT>
-				, <&kp O &kp R &kp T &kp O &kp N>
+				, <&macro_tap &kp O &kp R &kp T &kp O &kp N>
 				;
         };
 		techops_key: techops_key {
