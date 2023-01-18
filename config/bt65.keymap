@@ -31,7 +31,7 @@
 			#binding-cells = <0>;
             bindings
                 = <&macro_press LSHIFT>
-				, <$macro_tap &kp P> 
+				, <&macro_tap &kp P> 
 				, <&macro_release LSHFT>
 				, <&macro_tap &kp A &kp U &kp L>
                 , <&kp SPACE>
