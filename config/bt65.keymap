@@ -30,9 +30,15 @@
 			tap-ms = <40>;
 			#binding-cells = <0>;
             bindings
-                = <&kp P &kp A &kp U &kp L>
+                = <&macro_press LSHIFT>
+				, <&kp P> 
+				, <&macro_release LSHFT>
+				, <&kp A &kp U &kp L>
                 , <&kp SPACE>
-				, <&kp N &kp o &kp r &kp t &kp o &kp n>
+				, <&macro_press LSHIFT>
+				, <&kp N> 
+				, <&macro_release LSHFT>
+				, <&kp O &kp R &kp T &kp O &kp N>
 				;
         };
 		techops_key: techops_key {
@@ -42,7 +48,7 @@
 			wait-ms = <40>;
 			tap-ms = <40>;
             bindings
-                = <&kp ~ &kp / &kp . &kp s &kp s &kp h &kp / &kp t &kp e &kp c &kp h &kp o &kp p &kp s &kp _ &kp s &kp h &kp a &kp r &kp e &kp d &kp . &kp p &kp e &kp m>
+                = <&kp ~ &kp / &kp . &kp S &kp S &kp H &kp / &kp T &kp E &kp C &kp H &kp O &kp P &kp S &kp _ &kp S &kp H &kp A &kp R &kp E &kp D &kp . &kp P &kp E &kp M>
                 ;
         };
 		ed25519_key: ed25519_key {
@@ -52,7 +58,7 @@
 			wait-ms = <40>;
 			tap-ms = <40>;
             bindings
-                = <&kp ~ &kp / &kp . &kp s &kp s &kp h &kp / &kp i &kp d &kp _ &kp e &kp d &kp 2 &kp 5 &kp 5 &kp 1 &kp 9>
+                = <&kp ~ &kp / &kp . &kp S &kp S &kp H &kp / &kp I &kp D &kp _ &kp E &kp D &kp 2 &kp 5 &kp 5 &kp 1 &kp 9>
                 ;
         };
 		to_fn: to_fn {
