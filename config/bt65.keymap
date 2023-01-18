@@ -28,9 +28,23 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp P>
-				, <&macro_release &kp LSHFT>
+                = <&macro_tap &kp P &kp a &kp u &kp l >
+                ;
+        };
+		techops_key: techops_key {
+            label = "ZM_techops_key";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp ~ &kp / &kp . &kp s &kp s &kp h &kp / &kp t &kp e &kp c &kp h &kp o &kp p &kp s &kp _ &kp s &kp h &kp a &kp r &kp e &kp d &kp . &kp p &kp e &kp m >
+                ;
+        };
+		ed25519_key: ed25519_key {
+            label = "ZM_ed25519_key";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp ~ &kp / &kp . &kp s &kp s &kp h &kp / &kp i &kp d &kp _ &kp e &kp d &kp 2 &kp 5 &kp 5 &kp 1 &kp 9>
                 ;
         };
 		to_fn: to_fn {
@@ -130,9 +144,9 @@
 		raise {
 			bindings = <
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &rgb_ug RGB_TOG
-				&trans &to_def &to_one &to_two &trans &trans &trans &trans &kp INS &trans &prntscreen &kp SLCK &kp PAUSE_BREAK &reset &kp INS
-				&trans    &kp LEFT &kp DOWN &kp RIGHT &trans &trans &trans &trans &trans &trans &kp HOME  &kp PG_UP   &bootloader &kp PG_UP
-				&kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &trans &trans &kp END &kp PG_DN  &kp C_NEXT &trans &kp HOME
+				&trans &to_def &to_one &to_two &trans &techops_key &trans &trans &ed25519_key &trans &prntscreen &trans &kp PAUSE_BREAK &reset &kp INS
+				&trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp PG_UP
+				&kp C_PREV &kp C_NEXT &kp C_MUTE &trans &trans &trans &myname &trans &trans &trans &trans  &trans &trans &kp HOME
 				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &trans &bt BT_CLR &trans &trans
 			>;
 			sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
