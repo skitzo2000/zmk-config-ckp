@@ -160,7 +160,7 @@
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &rgb_ug RGB_TOG
 				&trans &to_def &to_one &to_two &trans &techops_key &trans &trans &ed25519_key &trans &prntscreen &trans &kp PAUSE_BREAK &reset &kp INS
 				&trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp PG_UP
-				&kp C_PREV &kp C_NEXT &kp C_MUTE &trans &trans &trans &paulnorton &trans &trans &trans &trans  &trans &trans &kp HOME
+				&kp C_PREV &kp C_NEXT &kp C_MUTE &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &kp HOME
 				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &trans &bt BT_CLR &trans &trans
 			>;
 			sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
