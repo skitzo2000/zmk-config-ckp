@@ -34,6 +34,8 @@
                 ;
         };
 		to_layer: to_layer {
+			label = "ZM_to_layer";
+            compatible = "zmk,behavior-macro";
 			wait-ms = <0>;
 			tap-ms = <0>;
 			#binding-cells = <0>;
