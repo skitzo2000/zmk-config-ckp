@@ -48,7 +48,7 @@
 			wait-ms = <40>;
 			tap-ms = <40>;
             bindings
-                = <&kp ~ &kp / &kp . &kp S &kp S &kp H &kp / &kp T &kp E &kp C &kp H &kp O &kp P &kp S &kp _ &kp S &kp H &kp A &kp R &kp E &kp D &kp . &kp P &kp E &kp M>
+                = <&kp TILDE &kp SLASH &kp PERIOD &kp S &kp S &kp H &kp SLASH &kp T &kp E &kp C &kp H &kp O &kp P &kp S &kp UNDERSCORE &kp S &kp H &kp A &kp R &kp E &kp D &kp PERIOD &kp P &kp E &kp M>
                 ;
         };
 		ed25519_key: ed25519_key {
@@ -58,7 +58,7 @@
 			wait-ms = <40>;
 			tap-ms = <40>;
             bindings
-                = <&kp ~ &kp / &kp . &kp S &kp S &kp H &kp / &kp I &kp D &kp _ &kp E &kp D &kp 2 &kp 5 &kp 5 &kp 1 &kp 9>
+                = <&kp TILDE &kp SLASH &kp PERIOD &kp S &kp S &kp H &kp SLASH &kp I &kp D &kp UNDERSCORE &kp E &kp D &kp 2 &kp 5 &kp 5 &kp 1 &kp 9>
                 ;
         };
 		to_fn: to_fn {
