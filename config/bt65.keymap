@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
 			wait-ms = <40>;
-			tap-ms = <40>;
+			tap-ms = <10>;
             bindings
                 = <&kp TILDE &kp SLASH &kp PERIOD &kp S &kp S &kp H &kp SLASH &kp T &kp E &kp C &kp H &kp O &kp P &kp S &kp UNDERSCORE &kp S &kp H &kp A &kp R &kp E &kp D &kp PERIOD &kp P &kp E &kp M>
                 ;
@@ -38,7 +38,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
 			wait-ms = <40>;
-			tap-ms = <40>;
+			tap-ms = <1	0>;
             bindings
                 = <&kp TILDE &kp SLASH &kp PERIOD &kp S &kp S &kp H &kp SLASH &kp I &kp D &kp UNDERSCORE &kp E &kp D &kp 2 &kp 5 &kp 5 &kp 1 &kp 9>
                 ;
@@ -75,7 +75,7 @@
 			#binding-cells = <0>;
 			bindings
 				= <&macro_tap &to 1>
-				, <&macro_tap &rgb_ug RGB_COLOR_HSB(130,86,86)>
+				, <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,100)>
 				;
 		};
 		to_two: to_two{
@@ -86,7 +86,7 @@
 			#binding-cells = <0>;
 			bindings
 				= <&macro_tap &to 2>
-				, <&macro_tap &rgb_ug RGB_COLOR_HSB(59,100,99)>
+				, <&macro_tap &rgb_ug RGB_COLOR_HSB(5945,100,100)>
 				;
 		};
     };
@@ -141,9 +141,9 @@
 			bindings = <
 				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &rgb_ug RGB_TOG
 				&trans &to_def &to_one &to_two &trans &techops_key &trans &trans &ed25519_key &trans &prntscreen &trans &kp PAUSE_BREAK &reset &kp INS
-				&trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  &trans   &bootloader &kp PG_UP
+				&rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_SPI &rgb_ug RGB_SPD &trans &trans  &trans   &bootloader &kp PG_UP
 				&kp C_PREV &kp C_NEXT &kp C_MUTE &trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &kp HOME
-				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &trans &bt BT_CLR &trans &trans
+				&bt BT_PRV &bt BT_NXT  &bt BT_CLR     &trans                            &trans   &trans   &trans &bt BT_CLR &trans &trans
 			>;
 			sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
 		};
