@@ -23,24 +23,6 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
-		paulnorton: paulnorton {
-            label = "ZM_paulnorton";
-            compatible = "zmk,behavior-macro";
-			wait-ms = <40>;
-			tap-ms = <40>;
-			#binding-cells = <0>;
-            bindings
-                = <&macro_press LSHIFT>
-				, <&macro_tap &kp P> 
-				, <&macro_release LSHFT>
-				, <&macro_tap &kp A &kp U &kp L>
-                , <&kp SPACE>
-				, <&macro_press LSHIFT>
-				, <&macro_tap &kp N> 
-				, <&macro_release LSHFT>
-				, <&macro_tap &kp O &kp R &kp T &kp O &kp N>
-				;
-        };
 		techops_key: techops_key {
             label = "ZM_techops_key";
             compatible = "zmk,behavior-macro";
